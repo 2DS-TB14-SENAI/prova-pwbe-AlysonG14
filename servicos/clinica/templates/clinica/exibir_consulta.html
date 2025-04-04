@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'base.html' %}">Voltar</a>
+    <form>
+        <a href="{% url 'form_consulta.html' %}">Criar</a>
+    </form>
+    <h2>
+        Paciente
+    </h2>
+        <article>
+            <section>
+                <ol>
+                    {% for consultas in consulta %}
+                    <li>
+                        <p><strong>Nome do Paciente:</strong> {{ consultas.paciente }}</p>
+                        <p><strong>Data:</strong> {{ consultas.data }}</p>
+                        <p><strong>Médico:</strong> {{ consultas.medico }}</p>
+                        <p><strong>Status:</strong> {{ consultas.status }}</p>
+
+                    </li>
+                    {% endfor %}
+                </ol>
+            </section>
+        </article>
+    
+</body>
+</html>

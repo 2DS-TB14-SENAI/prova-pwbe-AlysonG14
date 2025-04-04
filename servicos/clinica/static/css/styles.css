@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(220, 239, 255);
+}
+
+
+h2 {
+    color: darkblue;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+th,
+header {
+    background-color: rgb(49, 165, 201);
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    font-size: larger;
+    color: inherit;
+
+
+}
+
+.main-title{
+    text-align: center;
+}
+
+.main-title2{
+    text-align: center;
+
+}

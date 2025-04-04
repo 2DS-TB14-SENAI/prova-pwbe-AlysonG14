@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h2>
+        Hospital ClinWeb
+    </h2>
+        <ul>
+            <ol>
+                <div class="main-title">
+                <a href="{% url 'listar_medicos.html' %}">1- Médicos</a>
+                    <p>Esse é a descrição completa dos médicos, mostrando a lista e seus documentos completos</p>
+                </div>
+                <br><br><br>
+                <div class="main-title2">
+                <a href="{% url 'exibir_consulta.html' %}">2- Consultas</a>
+                    <p>Essa é a descrição completa da consulta, mostrando o nome do paciente e os seus documentos complestos</p>
+                    
+            </ol>
+        </ul>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'base.html' %}">Voltar</a>
+    <h1>
+        Lista de Médicos:
+    </h1>
+        <ol>
+            {% for i in lista_medico %}
+            <li>
+                    <p><strong>Nome:</strong> {{ i.nome }}</p>
+                    <p><strong>Especialidade:</strong> {{ i.especialidade }}</p>
+                    <p><strong>CRM:</strong> {{ i.crm }}</p>
+                    <p><strong>Email:</strong> {{ i.email }}</p>
+            </li>
+            {% endfor %}
+        </ol>
+    
+</body>
+</html>
