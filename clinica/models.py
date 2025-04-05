@@ -30,7 +30,7 @@ class Consulta(models.Model):
     id = models.PositiveIntegerField(primary_key=True)
     paciente = models.CharField(max_length=255)
     data = models.DateTimeField()
-    medico = models.ForeignKey(Médico, on_delete=models.CASCADE)
+    medico = models.ForeignKey(Medico, on_delete=models.CASCADE)
     status = models.CharField(max_length=4, choices=STATUS)
 
     def __str__(self):
