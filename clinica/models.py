@@ -17,7 +17,7 @@ STATUS = (
 )
 
 
-class Médico(models.Model):
+class Medico(models.Model):
     nome = models.CharField(max_length=255)
     especialidade = models.CharField(choices=ESPECIALIDADE, max_length=4) # Choices -> Cria uma lista de escolhas a partir da lista variável
     crm = models.CharField(max_length=255, unique=True)

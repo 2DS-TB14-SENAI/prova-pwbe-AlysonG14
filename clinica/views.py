@@ -8,7 +8,7 @@ def base(request):
     return render(request, 'clinica/base.html')
 
 def listar_medicos(request):
-    lista_medico = Médico.objects.all()
+    lista_medico = Medico.objects.all()
     return render(request, 'clinica/listar_medicos.html', {"lista_medico" : lista_medico})
 
 def detalhes_consulta(request):
